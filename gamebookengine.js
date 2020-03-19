@@ -13,7 +13,7 @@ const OBJECTMOVIE = 5;
 
 function doRoomLoad() {
    
-   runAttributes(this.id, this.id);
+   runAttributes(this.id);
     
     
     runSPANS();
@@ -39,6 +39,8 @@ function runAttributes(id, room) {
      var elAttrib = document.getElementById(id);
     
 var elVar = elAttrib.getAttribute('vars');
+   
+  var room = elAttrib.getAttribute('next');
 
 runElVars(elVar, room);
     
